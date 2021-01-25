@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Strona</title>
+            <meta name="description" content="strona">
+            <meta name="author" content="Jonatan">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script type="text/javascript">
+            function odliczanie()
+            {
+            
+            var dzisiaj = new Date();
+            
+           
+                
+            var dzien = dzisiaj.getDate();
+            var miesiac = dzisiaj.getMonth()+1;
+                if(miesiac<10) miesiac = "0"+miesiac;
+            var rok = dzisiaj.getFullYear();
+            
+            var godzina = dzisiaj.getHours();
+                if(godzina<10) godzina = "0"+godzina;
+            var minuta = dzisiaj.getMinutes();
+                if(minuta<10) minuta = "0"+minuta;
+            var sekunda = dzisiaj.getSeconds();
+                if(sekunda<10) sekunda = "0"+sekunda;
+            
+            document.getElementById("czas").innerHTML = godzina+":"+minuta+":"+sekunda+" | "+dzien+"."+miesiac+"."+rok;
+             
+            setTimeout("odliczanie()",1000);
+                
+            }
+            
+        </script>
+    </head>
+    <body onload="odliczanie();">
+ 
+       <div class="top">
+        <div class="container">
+           
+            <div class="topl">
+            <a>Strona główna</a>
+            </div>
+            <div class="topr">
+        
+                <div id="czas"></div>
+        </div>
+        </div>
+        </div>
+        
+        
+            <div class="menu">
+            <ul>
+                <li><a href="szablon.html">Szablon</a></li>
+                <li><a href="formularze.html">Formularze</a></li>
+                <li><a href="wpisany.html">Styl wpisany</a></li>
+                <li><a href="czcionki.html">Czcionki</a></li>
+                <li><a href="kolory.html">Kolory</a></li>
+                <li><a href="tekst.html">Tekst</a></li>
+                <li><a href="klasy.html">Klasy</a></li>
+                <li><a href="holografia.html">Holografia</a></li>
+                
+                </ul>
+                </div>
+                <div class="clear"></div>
+            
+            <div class="first">
+            <div class="container">
+                <h1>Witaj na mojej stronie</h1>
+                <p>Nazywam się <span class="bold">Jonatan Front</span>, mam 17 lat i jestem uczniem technikum na profilu informatycznym w Raciborzu. Interesuje się Front-endem, czyli pisaniem stron internetowych i odpowiadaniem za to, jak ona wygląda wizualnie. Niżej znajdziesz więcecj informacji</p>
+                </div>
+            </div>
+        <div class="container">    
+        <div class="second">
+                
+                   
+                    <h2 class="second-title">Technologie, które wykorzystuje do budowania stron:</h2>
+                    <div class="col"><img src="icons8-html-5-100.png">
+                    <p>HTML</p>
+                    <h3>Język programowania, który umożliwia realizację stron WWW. Odpowiada za treść strony</h3>
+                    </div>
+                    <div class="col"><img src="icons8-css3-100.png">
+                    <p>CSS</p>
+                    <h3>Język programowania służący do opisu formy wyświetlenia strpn WWW. Odpowiada za ułożenie elementów strony oraz ich wygląd</h3>
+                    </div>
+                    <div class="col"><img src="icons8-javascript-100.png">
+                    <p>JS</p>
+                        <h3>Skryptowy język programowania, który nadaje stronie "życia" poprzez efekty czy też animacje, czyli wszystkie dynamiczne elementy</h3>
+                    </div>
+                    
+                    
+                </div>
+            <div class="clear"></div>
+            <div class="third">
+            
+            <h2 class="third-title" id="comingsoon">Narazie to tyle, reszta powstaje</h2>
+            
+            </div>
+            </div>
+            
+            <footer>
+            <div class="container">
+                
+                <p>Stronę wykonał Jonatan Front. Wszelkie prawa zastrzeżone &copy; 2021</p>
+                </div>
+                
+            </footer>
+                
+    </body>
+</html>
