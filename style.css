@@ -62,18 +62,13 @@ ul {
     color: #000000;
     display: block;
     font-weight: 0;
-    border-right: 1px dashed #b47272;
      
-}
-
-ul a:last-child {
-    border-right: none;
 }
 
 ul a:hover {
     color: #000000;
     text-shadow: 0 0 6px #000000;
-    transition: 0.3s;
+    transition: 0.2s;
     
 }
 
