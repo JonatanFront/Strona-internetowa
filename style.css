@@ -39,7 +39,7 @@ body {
 }
 
 .menu {
-    height: 50px;
+    height: 55px;
     background: #ffa2a2;   
     text-align: center;  
     position: sticky;
@@ -50,7 +50,7 @@ ul {
      list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 19px;
+    font-size: 18px;
     height: 50px;
     line-height: 200%;
     display: inline-block;
