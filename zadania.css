@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    
+}
+
+h1 {
+    font-size: 30px;
+    color: #ff8900;
+}
+
+h2 {
+    font-size: 22px;
+    color: #ff8900;
+    padding-top: 25px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+p {
+    font-size: 17px;
+    padding: 40px;
+}
+
+.lista {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.lista li {
+    padding: 8px 0;
+    
+}
+
+.menu a {
+    padding: 0 5px;
+}
+
+.container-left {
+    width: 700px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lista-2 li {
+    padding: 6px 0;
+    margin-left: 7px;
+}
+
+.bold {
+    font-weight: bold;
+}
