@@ -1,0 +1,73 @@
+body {
+    background: #fdf2ea;
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    
+}
+
+.content {
+    background: #61432a;
+    color: #ae917f;
+}
+.wrapper {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    height: 55px;
+    text-align: center;
+    background: #ae917f;
+    
+}
+
+#abc {
+    color: #61432a;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: right;
+    margin-top: 0;
+}
+
+.info, .rivers, .tourist {
+    text-align: justify;
+    padding: 6px;
+}
+
+#first-photo {
+    float: left;
+    margin-right: 9px;
+}
+
+hr {
+    background-color: #ae917f;
+    margin: 10px 0;
+}
+
+
+a {
+    color: #fdf2ea;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.list {
+    color: #fdf2ea;
+    text-align: justify;
+}
+
+li {
+    list-style-type: square;
+}
+
+#second-photo {
+    float: right;
+    margin-left: 9px;
+}

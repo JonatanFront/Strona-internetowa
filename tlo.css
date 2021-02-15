@@ -1,0 +1,22 @@
+body {
+    background: #f9ffac;
+}
+
+.container {
+    background: #ffffff;
+    width: 600px;
+    height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dotted #000;
+    margin-top: 100px;
+    background-image: url(zdjecia/tlo_tlo.jpg);
+    background-repeat: repeat-y;
+    background-position: center;
+    padding: 20px;
+}
+p {
+    padding: 20px 50px;
+    font-size: 19px;
+    font-family: Arial;
+}
