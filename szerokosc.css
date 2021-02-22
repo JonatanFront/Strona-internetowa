@@ -1,0 +1,47 @@
+body {
+   background-color: #ffffff;
+   color: rgb(49, 49, 49);
+
+}
+
+div {
+   border: double rgb(49, 49, 49);
+   margin-left: 80px;
+   margin-top: 20px;
+}
+
+.first {
+   width: 200px;
+   margin-top: 60px;
+}
+
+.second {
+   width: 200pt;
+}
+
+.third {
+   width: 20ex;
+}
+
+.fourth {
+   width: 20em;
+}
+
+.fifth {
+   width: 2.5cm;
+}
+
+.sixth {
+   width: 2in;
+}
+.sixth li {
+   width: 3.5in;
+   padding: 3px 0;
+}
+
+img {
+   float: right;
+   max-width: 20%;
+   max-height: 20%;
+   margin: 70px;
+}
