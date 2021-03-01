@@ -1,0 +1,35 @@
+body {
+   margin: 10%;
+   background: #f0f0f0;
+}
+table {
+   border-collapse: collapse;
+}
+table, th, td {
+   border: 1px solid #008000;
+}
+table.as1 {
+   border-collapse: separate;
+   border: 1px solid #ff0000;
+   width: 300px;
+   table-layout: fixed;
+}
+table.as2 td {
+   border: 1px solid #0000ff;
+   text-align: left;
+   padding-left: 5px;
+   width: 200px;
+}
+table.as3 td.first_td {
+   border: none;
+   text-align: right;
+   padding-right: 10px;
+   width: 100px;
+}
+table.as4 td th {
+   border: 1px solid #008000;
+}
+th {
+   background: #008000;
+   color: #fff;
+}
