@@ -31,3 +31,9 @@ background: #9FF;
 clear: both;
 background: #999;
 }
+
+.column {
+   width: 33.333%;
+   float: left;
+   text-align: center;
+}
