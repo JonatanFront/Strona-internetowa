@@ -1,0 +1,85 @@
+body {
+   font-family: 'Amiko', sans-serif;
+   color: #3d3d3d;
+   background: #cacaca;
+}
+
+.wrapper {
+   width: 900px;
+   margin-left: auto;
+   margin-right: auto;
+   height: 800px;
+   background: #fff;
+   border-radius: 30px;
+   overflow: hidden;
+}
+
+header {
+   height: 100px;
+   background: rgb(160, 103, 141);
+   line-height: 100px;
+}
+
+nav {
+   text-align: center;
+   height: 50px;
+   background: rgb(255, 255, 255);
+   line-height: 50px;
+
+}
+
+nav a {
+   text-decoration: none;
+   padding: 5px 50px;
+   font-weight: 700;
+   color: rgb(160, 103, 141);
+   transition: 0.4s ease-in-out;
+}
+
+nav a:hover {
+   color: #3d3d3d;
+}
+
+.left, .right {
+   width: 200px;
+   height: 700px;
+   float: left;
+}
+
+.main {
+   width: 400px;
+   height: 700px;
+   float: left;
+   padding: 0 50px;
+}
+
+.left {
+   font-size: 22px;
+}
+.main-text {
+   font-size: 30px;
+}
+
+.left a {
+   padding-left: 10px;
+}
+
+.main {
+   font-size: 22px;
+}
+
+.right {
+   text-align: left;
+   font-size: 22px;
+}
+
+.title {
+   font-size: 60px;
+   text-align: center;
+}
+
+img {
+   height: 100px;
+   width: 150px;
+   float: left;
+}
