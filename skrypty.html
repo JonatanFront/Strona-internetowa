@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Skrypty</title>
+        <style>
+
+html {
+  
+  background-image:
+    radial-gradient(50% 30% ellipse at center top, #42422d 0%, rgb(39, 68, 82) 100%),
+    radial-gradient(60% 50% ellipse at center bottom, #bd31bd 0%, #dbd7e2 100%);
+  background-attachment: fixed;
+  color: #6cacc5;
+}
+
+body {
+  color: #ffffff;
+  font: 300 18px/1.6 "Source Sans Pro",sans-serif;
+  margin: 0;
+  padding: 5em 0 2em;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 0;
+}
+
+.warning {
+  background: -webkit-linear-gradient(45deg,  #ffffff 10%, #295157 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 auto 6em;
+  max-width: 9em;
+}
+
+.calculator {
+  font-size: 28px;
+  margin: 0 auto;
+  width: 10em;
+}
+  .calculator::before,
+  .calculator::after {
+    content: " ";
+    display: table;
+  }
+  
+  .calculator::after {
+    clear: both;
+  }
+
+
+
+.broken {
+  animation: broken 2s;
+  transform: translate3d(0,-2000px,0);
+  opacity: 0;
+}
+
+.viewer {
+  color: #ffffff;
+  float: left;
+  line-height: 3em;
+  text-align: right;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 7.5em;
+  height: 3em;
+}
+
+button {
+  border: 0;
+  background: rgba(102, 107, 57, 0.28);
+  color: #ffffff;
+  cursor: pointer;
+  float: left;
+  font: inherit;
+  margin: 0.25em;
+  width: 2em;
+  height: 2em;
+  transition: all 0.5s;
+}
+  
+  button:hover {
+    background: #ffffff;
+    color: rgb(102, 107, 57);
+  }
+  
+  button:focus {
+    outline: 0; 
+  }
+   
+    button::after {
+      animation: zoom 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: both; 
+      content: attr(data-num);
+      cursor: default;
+      font-size: 100px;
+      position: absolute;
+           top: 1.5em;
+           left: 50%;
+      text-align: center;
+      margin-left: -24px;
+      opacity: 0;
+      width: 48px;    
+    }
+
+
+.ops:focus::after {
+  content: attr(data-ops);
+  margin-left: -210px;
+  width: 420px;
+}
+
+.equals:focus::after {
+  content: attr(data-result);
+  margin-left: -300px;
+  width: 600px;
+}
+
+
+.reset {
+  background: rgba(102, 107, 57, 0.28);
+  color:#fff;
+  font-weight: 400;
+  margin-left: -77px;
+  padding: 0.5em 1em;
+  position: absolute;
+    top: -20em;
+    left: 50%;
+  width: auto;
+  height: auto;
+}
+  
+  .reset:hover {
+    background: #fff;
+    color: rgba(102, 107, 57, 0.28);    
+  }
+  
+  .reset.show {
+    top: 20em;
+    animation: fadein 4s;
+  }
+
+
+
+@keyframes zoom {
+  0% { 
+    transform: scale(.2); 
+    opacity: 1;
+  }
+  
+  70% { 
+    transform: scale(1); 
+  }
+  
+  100% { 
+    opacity: 0;
+  }
+}
+
+@keyframes broken {
+  0% {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+
+  5% {
+    transform: rotate(5deg);
+  }
+
+  15% {
+    transform: rotate(-5deg);
+  }
+
+  20% {
+    transform: rotate(5deg);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  70% {
+    transform: translate3d(0,2000px,0);
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate3d(0,-2000px,0);
+  }
+}
+
+
+@keyframes fadein {
+  0% {
+    top: 20em;
+    opacity: 0;
+  }
+  
+  50% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 420px) {
+  .calculator {
+    width: 12em;
+  }
+  .viewer {
+    width: 8.5em;
+  }
+  button {
+    margin: 0.5em;
+  }
+}
+
+        </style>
+    </head>
+    <body>
+        <h1>Kalkulator</h1>
+<p class="warning">Nawet nie próbuj dzielić przez 0...</p>
+
+<div id="calculator" class="calculator">
+
+  <button id="clear" class="clear">C</button>
+
+  <div id="viewer" class="viewer">0</div>
+
+  <button class="num" data-num="7">7</button>
+  <button class="num" data-num="8">8</button>
+  <button class="num" data-num="9">9</button>
+  <button data-ops="plus" class="ops">+</button>
+
+  <button class="num" data-num="4">4</button>
+  <button class="num" data-num="5">5</button>
+  <button class="num" data-num="6">6</button>
+  <button data-ops="minus" class="ops">-</button>
+
+  <button class="num" data-num="1">1</button>
+  <button class="num" data-num="2">2</button>
+  <button class="num" data-num="3">3</button>
+  <button data-ops="times" class="ops">*</button>
+
+  <button class="num" data-num="0">0</button>
+  <button class="num" data-num=".">.</button>
+  <button id="equals" class="equals" data-result="">=</button>
+  <button data-ops="divided by" class="ops">/</button>
+</div>
+
+<button id="reset" class="reset">Reset strony</button>
+
+<script>(function() {
+    "use strict";
+  
+    
+    var el = function(element) {
+      if (element.charAt(0) === "#") {
+        return document.querySelector(element);  
+      }
+  
+      return document.querySelectorAll(element); t
+    };
+  
+    
+    var viewer = el("#viewer"), 
+      equals = el("#equals"), 
+      nums = el(".num"), 
+      ops = el(".ops"),  
+      theNum = "", 
+      oldNum = "", 
+      resultNum, 
+      operator; 
+  
+  
+    var setNum = function() {
+      if (resultNum) { 
+        theNum = this.getAttribute("data-num");
+        resultNum = "";
+      } else {
+        theNum += this.getAttribute("data-num");
+      }
+  
+      viewer.innerHTML = theNum; 
+  
+    };
+  
+    
+    var moveNum = function() {
+      oldNum = theNum;
+      theNum = "";
+      operator = this.getAttribute("data-ops");
+  
+      equals.setAttribute("data-result", ""); 
+    };
+  
+    
+    var displayNum = function() {
+  
+    
+      oldNum = parseFloat(oldNum);
+      theNum = parseFloat(theNum);
+  
+    
+      switch (operator) {
+        case "plus":
+          resultNum = oldNum + theNum;
+          break;
+  
+        case "minus":
+          resultNum = oldNum - theNum;
+          break;
+  
+        case "times":
+          resultNum = oldNum * theNum;
+          break;
+  
+        case "divided by":
+          resultNum = oldNum / theNum;
+          break;
+  
+         
+        default:
+          resultNum = theNum;
+      }
+  
+     
+      if (!isFinite(resultNum)) {
+        if (isNaN(resultNum)) {  
+          resultNum = "zepsułeś";
+        } else { 
+          resultNum = "mówiłem...";
+          el('#calculator').classList.add("broken"); 
+          el('#reset').classList.add("show");     
+        }
+      }
+  
+      
+      viewer.innerHTML = resultNum;
+      equals.setAttribute("data-result", resultNum);
+  
+      
+      oldNum = 0;
+      theNum = resultNum;
+  
+    };
+  
+    
+    var clearAll = function() {
+      oldNum = "";
+      theNum = "";
+      viewer.innerHTML = "0";
+      equals.setAttribute("data-result", resultNum);
+    };
+  
+    
+  
+    
+    for (var i = 0, l = nums.length; i < l; i++) {
+      nums[i].onclick = setNum;
+    }
+  
+   
+    for (var i = 0, l = ops.length; i < l; i++) {
+      ops[i].onclick = moveNum;
+    }
+  
+  
+    equals.onclick = displayNum;
+  
+    
+    el("#clear").onclick = clearAll;
+  
+   
+    el("#reset").onclick = function() {
+      window.location = window.location;
+    };
+  
+  }());</script>
+    </body>
+</html>
