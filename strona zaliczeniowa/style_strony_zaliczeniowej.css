@@ -52,11 +52,18 @@ body {
     
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+.first {
+    height: 50vh;
+}
+
 .wrapper {
     width: 100%;
     text-align: center;
-    background: rgb(48,48,48);
-background: linear-gradient(0deg, rgba(48,48,48,1) 60%, rgba(0,0,0,1) 100%);
+    background: #2d3c47;
 }
 
 
@@ -64,11 +71,17 @@ svg {
     display: block;
 }
 
+#wave {
+    display: block;
+}
+
+
+
 h1 {
     font-size: 120px;
     font-weight: 600;
     letter-spacing: 4px;
-    padding: 50px 0;
+    padding: 80px 0 130px 0;
 }
 
 .nav {
@@ -106,9 +119,7 @@ h1 {
 
 .text {
     width: 100%;
-    background: rgb(11,251,255);
-background: linear-gradient(0deg, rgba(11,251,255,1) 0%, rgba(67,234,32,1) 100%);
-    text-align: center;
+    background: #a2d9ff;
 }
 
 
@@ -128,6 +139,10 @@ h2 {
     color: #323232;
     font-size: 50px;
     padding-bottom: 20px;
+}
+
+#ititle {
+    padding-top: 300px
 }
 
 #hist a {
@@ -161,9 +176,59 @@ h2 {
 }
 
 #ctitle {
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 #ciek a {
     padding: 40px 0;
 }
+
+#gale img {
+    width: 200px;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+}
+
+#gale img:hover {
+    transform: scale(1.1);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    .div5 { grid-area: 2 / 1 / 3 / 2; }
+    .div6 { grid-area: 2 / 2 / 3 / 3; }
+    .div7 { grid-area: 2 / 3 / 3 / 4; }
+    .div8 { grid-area: 2 / 4 / 3 / 5; }
+    .div9 { grid-area: 3 / 1 / 4 / 2; }
+    .div10 { grid-area: 3 / 2 / 4 / 3; }
+    .div11 { grid-area: 3 / 3 / 4 / 4; }
+    .div12 { grid-area: 3 / 4 / 4 / 5; }
+
+
+
+
+    #gtitle {
+        padding: 90px 0 130px 0;
+    }
+
+    .end {
+        height: 200px;
+    }
+
+    footer {
+        height: 40px;
+        width: 100%;
+        color: #a2d9ff;
+        background-color: #2d3c47;
+        text-align: center;
+    }
