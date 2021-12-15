@@ -52,7 +52,7 @@ if(nineth.checked == true){
 if(tenth.checked == true){
    koniec = koniec + 1;
 }
-document.getElementById('check').innerHTML = "twój wynik to " + koniec + "%";
+document.getElementById('check').innerHTML = "twój wynik to " + koniec * 10 + "%";
 }
 
 
