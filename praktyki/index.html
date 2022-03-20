@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/lightbox2-2.11.3/dist/css/lightbox.min.css">
+<script src="/lightbox2-2.11.3/dist/js/lightbox-plus-jquery.min.js"></script>
+   <title>Strona główna</title>
+</head>
+<body onload="startTime()">
+
+   <div class="container">
+      <div class="header">
+      <p id="headerr">Moje praktyki</p>
+   </div>
+      
+      <div class="nav">
+         <div class="time">
+            <div id="clockdate">
+               <div class="clockdate-wrapper">
+                 <div id="clock" style="font-size: 30px;"></div>
+               </div>
+             </div>
+         </div>
+         <a href="#praktyki" class="underline">Praktyki</a>
+         <a href="#galeria" class="underline">Galeria</a>
+         <a href="#kontakt" class="underline">Kontakt</a>
+      </div>
+      <div class="content">
+      <div class="text1">
+        <h1 class="big">WSTĘP</h1>
+        <p class="med">Ta strona na ma celu przybliżenie Ci tego, co działo się podczas mojej nieobecności na praktyce szkolnej. Przez te 4 tygodnie nauczyłem się wielu rzeczy związanych głownie z serwisem komputerowym. Wyniosłem wiele cennych informacji. Bardzo dobrze wspominam ten okres i chętnie bym to powtórzył.</p>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#291746" fill-opacity="1" d="M0,96L1440,160L1440,320L0,320Z"></path></svg> 
+  <div class="text2">
+   <div class="content">
+   <h1 id="praktyki" class="big">PRAKTYKA</h1>
+   <p class="med">Ostatecznie praktykę odbyłem w serwisie komputerowym "Komputronik" w Raciborzu. Z racji tego, że firma jest połączona z "Ostrógnet", nie wiedziałem czego mogę się spodziewać. Nasza 6 osobowa grupa podzieliła się na 2 części, jedni zostali przy sieciach, a reszta pojechała do serwisu. <br><br><br> Zaczęło się ciekawie, ponieważ od razu po przyjściu miałem okazję rozkręcać laptopa, a nawet jeszcze dokładnie nie obejrzałem sklepu. Jednak naprawianie sprzętu to nie jedyna rzecz, która tam mnie spotkała. Z czasem zostałem zaangażowany w życie serwisu. Uczyłem się rozmieszczenia produktów poprzez aktualizowanie i podmienianie cen czy przyjmowanie dostaw. Mogłem również przełamać swoją nieśmiałość, dzięki pracy z klientami. <br><br><br> W sumie nie wiem co dalej napisać, o ile Pan do tego momentu nie zasnął. Chyba największą zaletą praktyk była przerwa od szkoły na miesiąc. Co tu więcej pisać, było fajnie, odskocznia od nauki polskiego i matematyki i php hehe. Więcej z siebie nie wycisnę, więc kończę pisać i pozdrawiam serdecznie  </p>
+  </div>
+</div>
+<div class="gallery">
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#291746" fill-opacity="1" d="M0,96L1440,160L1440,0L0,0Z"></path></svg>
+   <div class="content">
+      <h1 id="galeria" style="margin-bottom: 30px;" class="big">GALERIA</h1>
+      <div class="my_gallery">
+         <a href="/zdjecia/jeshoots-com-sMKUYIasyDM-unsplash-min.jpg" data-lightbox="mygallery"><img class="div1" src="/zdjecia/jeshoots-com-sMKUYIasyDM-unsplash-min.jpg" alt="">
+         </a>
+         <a href="/zdjecia/nathan-anderson-KHSPGJ3zP0M-unsplash-min.jpg" data-lightbox="mygallery"><img class="div2" src="/zdjecia/nathan-anderson-KHSPGJ3zP0M-unsplash-min.jpg" alt="">
+         </a>
+         <a href="/zdjecia/nathan-anderson-xV3CHzfhkjE-unsplash-min.jpg" data-lightbox="mygallery"><img class="div3" src="/zdjecia/nathan-anderson-xV3CHzfhkjE-unsplash-min.jpg" alt="">
+         </a>
+         <a href="/zdjecia/onur-binay-P3PpD5k7jfI-unsplash-min.jpg" data-lightbox="mygallery"><img class="div4" src="/zdjecia/onur-binay-P3PpD5k7jfI-unsplash-min.jpg" alt="">
+         </a>
+         <a href="/zdjecia/thisisengineering-raeng-32PpagSzeGs-unsplash-min.jpg" data-lightbox="mygallery"><img class="div5" src="/zdjecia/thisisengineering-raeng-32PpagSzeGs-unsplash-min.jpg" alt="">
+         </a>
+         <a href="/zdjecia/tistio-ZO0weaaDrBs-unsplash-min.jpg" data-lightbox="mygallery"><img class="div6" src="/zdjecia/tistio-ZO0weaaDrBs-unsplash-min.jpg" alt="">
+         </a>
+      </div>
+   </div>
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#291746" fill-opacity="1" d="M0,96L1440,160L1440,320L0,320Z"></path></svg>
+</div>
+<div class="contact">
+   <div class="content">
+      <h1 id="kontakt" style="margin-bottom: 30px;" class="big">KONTAKT</h1>
+      <div class="con">
+      <label for="imie">imię</label><br>
+      <input type="text" name="imie">
+<br><br>
+      <label for="nazwisko">nazwisko</label><br>
+      <input type="text" name="nazwisko">
+<br><br>
+      <label for="mail">e-mail</label><br>
+      <input type="text" name="mail">
+<br><br>
+      <label for="mess">wiadomość</label><br>
+      <input style="padding-bottom: 50px;" type="text" name="mess">
+ <br><br>     <button onclick="send()">Wyślij</button>
+   </div>
+</div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#291746" fill-opacity="1" d="M0,96L1440,160L1440,0L0,0Z"></path></svg>
+<h4 style="text-align: center;">Stronę wykonał Jonatan Front</h4>
+</div>
+    <script src="main.js"></script>
+    
+</body>
+</html>
