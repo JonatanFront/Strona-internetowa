@@ -157,12 +157,13 @@ body {
    padding: 10px 25px;
    border-radius: 30px;
    margin-top: 20px;
-   transition: 1s ease-in-out;
+   transition: ease-in-out 250ms;
+   width: 300px;
 }
 
 .button:hover {
-   width: 500px;
    cursor: pointer;
+   width: 450px;
 }
 
 .animated-text {
