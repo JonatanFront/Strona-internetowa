@@ -177,6 +177,45 @@ h1{
   }
 }
 
+.x {
+  color: #ac2424;
+  animation: xa 10s infinite;
+}
+
+#z { 
+  animation: za 10s infinite;
+}
+
+@keyframes xa {
+  0% {
+    color: #ac2424;
+  }
+
+  50% {
+    color: var(--bs-dark);
+  }
+
+  100% {
+    color: #ac2424;
+  }
+  
+}
+
+@keyframes za {
+  0% {
+    color: var(--bs-dark);
+  }
+
+  50% {
+    color: #ac2424;
+  }
+
+  100% {
+    color: var(--bs-dark);
+  }
+  
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;
