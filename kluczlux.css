@@ -175,6 +175,10 @@ h1{
   #break {
     padding: 0 15px;
   }
+
+  header {
+    height: 800px;
+  }
 }
 
 .x {
