@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="sklep.css">
+    <link rel="stylesheet" href="splide.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ).mount();
+  } );
+</script>
+</head>
+
+<body>
+   <div class="front_page">
+    <div class="nav" style="padding-top: 50px;">
+        <div class="logo"><p style="margin: 0; color: #fcd9c5; font-size: 40px; margin-left: 120px; font-weight: 700; font-family: 'Dancing Script', cursive;">LegoMania</p></div>
+        <div class="menu">
+            <a class="xd" href="#products">Produkty</a>
+            <a class="xd" href="#about">O nas</a>
+            <a class="xd" id="klik" onclick="payment()" href="#" style="margin-right: 70px;"><span id="pay">Zapłać </span> <span id="kosz">Koszyk </span><span class="kosz">0 zł</span></a>
+        </div>
+
+    </div>
+    <div class="text">
+        <div class="text-front">
+        <p id="napis">Wszystko, czego potrzebujesz</p><br>
+        <p id="napis2">znajdziesz w naszym sklepie</p>
+    </div>
+    </div>
+    <a href="#products"><button id="roll">&#8681;</button></a>
+   </div>
+    </div>
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img src="slide1.png" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="slide2.png" alt="">
+                  </li>
+                  <li class="splide__slide">
+                      <img src="slide3.png" alt="">
+                  </li>
+                  <li class="splide__slide">
+                    <img src="slide1.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="slide2.png" alt="">
+                </li>
+                <li class="splide__slide">
+                    <img src="slide3.png" alt="">
+                </li>
+              </ul>
+        </div>
+      </section>
+    <div class="container" id="products">
+
+        <div class="item" id="jeden"><img src="z1.jfif" alt=""><br>
+            <h1>Koloseum</h1>
+            <h2>Cena: <span class="price">2000</span>zł</h2>
+            <button id="b1" class="btn" onclick="cena1(), add()">Dodaj do koszyka</button>
+        </div>
+        <div class="item" id="dwa"><img src="z2.jfif" alt=""><br>
+            <h1>Baby Yoda</h1>
+            <h2>Cena: <span class="price">600</span>zł</h2>
+            <button id="b2" class="btn" onclick="cena2(), add()">Dodaj do koszyka</button>
+        </div>
+        <div class="item" id="trzy"><img src="z3.png" alt=""><br>
+            <h1>The Office</h1>
+            <h2>Cena: <span class="price">500</span>zł</h2>
+            <button id="b3" class="btn" onclick="cena3(), add()">Dodaj do koszyka</button>
+        </div>
+        <div class="item" id="cztery"><img src="z4.jpeg" alt=""><br>
+            <h1>Jeep</h1>
+            <h2>Cena: <span class="price">300</span>zł</h2>
+            <button id="b4" class="btn" onclick="cena4(), add()">Dodaj do koszyka</button>
+        </div>
+        <div class="item" id="piec"><img src="z5.png" alt=""><br>
+            <h1>F1</h1>
+            <h2>Cena: <span class="price">1500</span>zł</h2>
+            <button id="b5" class="btn" onclick="cena5(), add()">Dodaj do koszyka</button>
+        </div>
+        <div class="item" id="szesc"><img src="z6.png" alt=""><br>
+            <h1>Miasto</h1>
+            <h2>Cena: <span class="price">1200</span>zł</h2>
+            <button id="b6" class="btn" onclick="cena6(), add()">Dodaj do koszyka</button> </div>
+        <div class="item" id="siedem"><img src="z7.jpg" alt=""><br>
+            <h1>Minecraft</h1>
+            <h2>Cena: <span class="price">550</span>zł</h2>
+            <button id="b7" class="btn" onclick="cena7(), add()">Dodaj do koszyka</button>
+        </div>
+        <div class="item" id="osiem"><img src="z8.jfif" alt=""><br>
+            <h1>Predator</h1>
+            <h2>Cena: <span class="price">200</span>zł</h2>
+            <button id="b8" class="btn" onclick="cena8(), add()">Dodaj do koszyka</button>
+        </div>
+        <div class="item" id="dziewiec"><img src="z9.jfif" alt=""><br>
+            <h1>Star Wars</h1>
+            <h2>Cena: <span class="price">1100</span>zł</h2>
+            <button id="b9" onclick="cena9(), add()">Dodaj do koszyka</button>
+        </div>
+        </div>
+        <div class="about" id="about">
+            <h1>O nas</h1>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis reprehenderit corporis vel alias in molestias voluptatem tempora, sapiente odit commodi. Id facilis velit in delectus dolore consequatur aspernatur culpa aut.</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi laudantium earum atque necessitatibus error voluptas aut, harum suscipit nemo quo optio impedit, nisi quia adipiscrem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quas eos sapiente alias, sunt repudiandae voluptatum architecto tempora quaerat ducimus non nisi quidem iure est dolorem molestias perferendis, at au
+           rem ipsum dolor sit amet consectetur adipisicing elit. Illo quod modi dolore a. Numquam atque quisquam assumenda. Odio laborum officiis debitis et est temporibus. Ab adipisci expedita debitis architecto minu
+           em ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis reprehenderit corporis vel alias in molestias voluptatem tempora, sapiente odit commodi. Id facilis velit in delectus dolore consequatur aspernatur culpa aut
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi laudantium earum atque necessitatibus error voluptas aut, harum suscipit nemo quo optio impedit, nisi quia adipisci minus ipsam corporis? Sin
+           orem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quas eos sapiente alias, sunt repudiandae voluptatum architecto tempora quaerat ducimus non nisi quidem iure est dolorem molestias perferendis, at au
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod modi dolore a. Numquam atque quisquam assumenda. Odio laborum officiis debitis et est temporibus. Ab adipisci expedita debitis architecto minus.</h2>
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis reprehenderit corporis vel alias Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error voluptatibus modi saepe nulla, dolores suscipit. Temporibus harum cumque quis vero, animi nesciunt nobis ab incidunt! Accusantium ipsam temporibus dolorum modi? loer
+                 in molestias voluptatem tempora, sapiente odit commodi. Id facilis velit in delectus dolore consequatur aspernatur culpa aut.</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam eligendi laudantium earum atque necessitatibus error voluptas aut, harum suscipit nemo quo optio impedit, nisi quia adipisci minus ipsam corporis? Sint?</h2>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quas eos sapiente alias, sunt repudiandae voluptatum architecto tempora quaerat ducimus non nisi quidem iure est dolorem molestias perferendis, at aut.</h2> 
+            <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium sapiente voluptatibus iste tenetur velit autem, mollitia quos perspiciatis! Aperiam sapiente quibusdam eos ab animi explicabo expedita nihil eaque sed tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam natus ex animi nam autem officia, nemo sapiente adipisci nobis necessitatibus eius est quos asperiores repellendus temporibus similique vel non eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam cumque vitae accusantium possimus beatae fugit inventore incidunt quia saepe reprehenderit, obcaecati blanditiis tenetur, deserunt delectus voluptas illo, nemo nostrum aliquid! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quod modi dolore a. Numquam atque quisquam assumenda. Odio laborum officiis debitis et est temporibus. Ab adipisci expedita debitis architecto minus.</h2>
+        </div>
+
+        <footer>
+            Największy sklep z klockami Lego w Polsce
+        </footer>
+
+<script src="splide.min.js"></script>
+        <script>
+
+            document.querySelector(".kosz").innerHTML = 0 + " zł";
+
+            function cena1() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 2000 + " zł";
+
+            }
+
+            function cena2() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 600 + " zł";
+
+            }
+
+            function cena3() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 500 + " zł";
+
+            }
+
+            function cena4() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 300 + " zł";
+
+            }
+
+            function cena5() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 1500 + " zł";
+
+            }
+
+            function cena6() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 1200 + " zł";
+
+            }
+
+            function cena7() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 550 + " zł";
+
+            }
+
+            function cena8() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 200 + " zł";
+
+            }
+
+            function cena9() {
+
+                document.querySelector(".kosz").innerHTML = parseInt(document.querySelector(".kosz").innerHTML) + 1100 + " zł";
+
+            }
+
+            function add(){
+                alert("dodano do koszyka, wartość rzeczy w koszu wynosi " + document.querySelector(".kosz").innerHTML);
+            }
+
+            function payment(){
+                alert("Dziękujemy za zakupy w naszym sklepie");
+                document.querySelector(".kosz").innerHTML = 0 + " zł";
+            }
+        </script>
+
+</body>
+
+</html>
